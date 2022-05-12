@@ -1,0 +1,582 @@
+@font-face {
+  font-family: 'MinSans-Medium';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#wrap {
+  position: relative;
+  width: 100%;
+  font-family: 'MinSans-Medium';
+  font-weight: 800;
+  background-color: #000;
+}
+
+#wrap header {
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  z-index: 2000;
+}
+
+#wrap header > .gnb_bg {
+  position: absolute;
+  top: -500px;
+  left: 50%;
+  width: 1920px;
+  height: 400px;
+  margin-left: -960px;
+  text-indent: -9999px;
+  background-color: #000;
+  border-top: 1px solid #3f3f3f;
+  z-index: 200;
+}
+
+#wrap header > .head-con {
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+#wrap header > .head-con > .logo {
+  position: absolute;
+  top: 29px;
+  left: 31px;
+  width: 105px;
+  background-size: cover;
+  background-image: url(./../image/sony_logo.svg);
+  z-index: 50;
+}
+
+#wrap header > .head-con > .logo > a {
+  display: block;
+  height: 17px;
+  text-indent: -9999px;
+}
+
+#wrap header > .head-con > .logo > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap header > .head-con > .snb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 200;
+}
+
+#wrap header > .head-con > .snb > li {
+  width: 25px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+#wrap header > .head-con > .snb > li:nth-child(1) {
+  margin-right: 25px;
+  background-image: url(./../image/sony_02.svg);
+}
+
+#wrap header > .head-con > .snb > li:nth-child(2) {
+  margin-right: 25px;
+  background-image: url(./../image/sony_03.svg);
+}
+
+#wrap header > .head-con > .snb > li:nth-child(3) {
+  background-image: url(./../image/sony_04.svg);
+}
+
+#wrap header > .head-con > .snb > li > a {
+  display: block;
+  height: 40px;
+  text-indent: -9999px;
+}
+
+#wrap header > .head-con > nav > .gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+#wrap header > .head-con > nav > .gnb > li {
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  z-index: 200;
+}
+
+#wrap header > .head-con > nav > .gnb > li:hover > a, #wrap header > .head-con > nav > .gnb > li.on > a {
+  color: #5B66EF;
+}
+
+#wrap header > .head-con > nav > .gnb > li:hover > a::after, #wrap header > .head-con > nav > .gnb > li.on > a::after {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 200px;
+  content: '';
+  background-color: #5B66EF;
+}
+
+#wrap header > .head-con > nav > .gnb > li > a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#wrap header > .head-con > nav > .gnb > li > .lnb {
+  display: none;
+  position: absolute;
+  top: 80px;
+  height: 370px;
+  padding-top: 30px;
+  z-index: 100;
+}
+
+#wrap header > .head-con > nav > .gnb > li > .lnb:hover, #wrap header > .head-con > nav > .gnb > li > .lnb.on {
+  background-color: rgba(255, 255, 255, 0.151);
+}
+
+#wrap header > .head-con > nav > .gnb > li > .lnb > li {
+  height: 50px;
+  line-height: 50px;
+}
+
+#wrap header > .head-con > nav > .gnb > li > .lnb > li:hover > a, #wrap header > .head-con > nav > .gnb > li > .lnb > li.on > a {
+  color: #5B66EF;
+}
+
+#wrap header > .head-con > nav > .gnb > li > .lnb > li > a {
+  display: block;
+  width: 200px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#wrap section.visual {
+  position: relative;
+  width: 100%;
+  font-weight: normal;
+}
+
+#wrap section.visual > .visual-con {
+  position: relative;
+  left: 50%;
+  width: 1920px;
+  height: 600px;
+  margin-left: calc(1920px / -2);
+  overflow: hidden;
+}
+
+#wrap section.visual > .visual-con > .slide {
+  position: absolute;
+  left: calc(1920px * -9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: row nowrap;
+      flex-wrap: row nowrap;
+  width: calc(1920px * 27);
+}
+
+#wrap section.visual > .visual-con > .slide > li {
+  width: calc(100% / 27);
+  height: 600px;
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_01 {
+  background-image: url(./../image/visual_01.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_02 {
+  background-image: url(./../image/visual_02.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_03 {
+  background-image: url(./../image/visual_03.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_04 {
+  background-image: url(./../image/visual_04.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_05 {
+  background-image: url(./../image/visual_05.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_06 {
+  background-image: url(./../image/visual_06.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_07 {
+  background-image: url(./../image/visual_07.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_08 {
+  background-image: url(./../image/visual_08.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li.slide_09 {
+  background-image: url(./../image/visual_09.jpg);
+}
+
+#wrap section.visual > .visual-con > .slide > li > div {
+  margin: 130px 0 0 350px;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+#wrap section.visual > .visual-con > .slide > li > div > span {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#wrap section.visual > .visual-con > .slide > li > div > span.sub {
+  margin: 10px 0 20px 0;
+}
+
+#wrap section.visual > .visual-con > .slide > li > div > span.date {
+  font-size: 16px;
+}
+
+#wrap section.visual > .visual-con > .slide > li > div > a {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#wrap section.visual > .visual-con > .count {
+  position: absolute;
+  right: 19%;
+  bottom: 45px;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#wrap section.visual > .visual-con > .prev {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  width: 38px;
+  margin-top: -36px;
+  background-image: url(./../image/prev.png);
+}
+
+#wrap section.visual > .visual-con > .prev > a {
+  display: block;
+  height: 72px;
+  text-indent: -99999px;
+}
+
+#wrap section.visual > .visual-con > .next {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  width: 38px;
+  margin-top: -36px;
+  background-image: url(./../image/next.png);
+}
+
+#wrap section.visual > .visual-con > .next > a {
+  display: block;
+  height: 72px;
+  text-indent: -99999px;
+}
+
+#wrap section.content {
+  position: relative;
+  height: 3700px;
+  background-color: #fff;
+}
+
+#wrap section.content > .content-con {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  width: 1200px;
+  margin-left: -600px;
+}
+
+#wrap section.content > .content-con > .tab-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: row nowrap;
+      flex-wrap: row nowrap;
+  width: 100%;
+}
+
+#wrap section.content > .content-con > .tab-menu > li {
+  width: calc(100% / 6);
+}
+
+#wrap section.content > .content-con > .tab-menu > li > a {
+  display: block;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  color: grey;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 1px solid #c2c2c2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrap section.content > .content-con > .tab-menu > li:hover > a, #wrap section.content > .content-con > .tab-menu > li.on > a {
+  color: #5B66EF;
+  border-bottom: 2px solid #5B66EF;
+}
+
+#wrap section.content > .content-con > .reserve {
+  position: relative;
+  top: 80px;
+}
+
+#wrap section.content > .content-con > .reserve > h3 {
+  position: absolute;
+  left: 0;
+  font-size: 24px;
+}
+
+#wrap section.content > .content-con > .reserve > .select {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap section.content > .content-con > .reserve > .select > p {
+  height: 35px;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: normal;
+}
+
+#wrap section.content > .content-con > .reserve > .select > p:nth-child(1) > a {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+#wrap section.content > .content-con > .reserve > .select > p:nth-child(2) > a {
+  color: grey;
+}
+
+#wrap section.content > .content-con > .reserve > .select > p:nth-child(3) {
+  background-color: #000;
+}
+
+#wrap section.content > .content-con > .reserve > .select > p:nth-child(3) > a {
+  padding: 5px 15px;
+  color: white;
+  font-size: 14px;
+}
+
+#wrap section.content > .content-con > .reserve > .reserve-con {
+  position: absolute;
+  top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1200px;
+}
+
+#wrap section.content > .content-con > .reserve > .reserve-con > div {
+  margin-bottom: 60px;
+}
+
+#wrap section.content > .content-con > .reserve > .reserve-con > div > p.tit {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+#wrap section.content > .content-con > .reserve > .reserve-con > div > p.date {
+  font-weight: normal;
+}
+
+#wrap footer {
+  position: relative;
+  width: 1920px;
+  height: 500px;
+  margin: 0 auto;
+  color: #ccc;
+  background-color: #000;
+}
+
+#wrap footer > .left {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
+#wrap footer > .left > .site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#wrap footer > .left > .site > li > a {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#wrap footer > .left > .site > li::after {
+  margin: 0 12px;
+  font-size: 14px;
+  font-weight: 300;
+  content: '|';
+}
+
+#wrap footer > .left > .site > li:nth-child(2) > a {
+  font-weight: 600;
+}
+
+#wrap footer > .left > .inipay > p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#wrap footer > .left > .inipay > p:last-child {
+  position: relative;
+  line-height: 20px;
+}
+
+#wrap footer > .left > .inipay > p:last-child > a {
+  position: absolute;
+  top: 4px;
+  right: 480px;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-image: url(./../image/inipay1.png);
+  background-size: contain;
+}
+
+#wrap footer > .left > address {
+  margin-top: 20px;
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+#wrap footer > .right {
+  position: absolute;
+  top: 90px;
+  right: 160px;
+}
+
+#wrap footer > .right > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 600px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#wrap footer > .right > ul > li {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#wrap footer > .right > ul > li:first-child {
+  margin-right: 100px;
+}
+
+#wrap footer > .right > ul > li > a {
+  display: block;
+  height: 35px;
+  width: 35px;
+  margin-right: 35px;
+  text-indent: -9999px;
+  background-position: center center;
+}
+
+#wrap footer > .right > ul > li:nth-child(2) > a {
+  background-image: url(./../image/sony_33.svg);
+}
+
+#wrap footer > .right > ul > li:nth-child(3) > a {
+  background-image: url(./../image/sony_34.svg);
+}
+
+#wrap footer > .right > ul > li:nth-child(4) > a {
+  background-image: url(./../image/sony_35.svg);
+}
+
+#wrap footer > .right > ul > li:nth-child(5) > a {
+  background-image: url(./../image/sony_36.svg);
+}
+
+#wrap footer > .right > select#sonyfamily {
+  width: 300px;
+  height: 50px;
+  margin: 40px 6px 0 0;
+  color: #aaaaaa;
+  text-indent: 15px;
+  font-size: 16px;
+  background-color: #222222;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#wrap footer > .right > button#sonyglobal {
+  width: 300px;
+  height: 50px;
+  margin-top: 40px;
+  color: #aaaaaa;
+  text-indent: 15px;
+  font-size: 16px;
+  text-align: left;
+  background-color: #222222;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#wrap footer > .right > button#sonyglobal::after {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px;
+  border-color: transparent transparent transparent #aaaaaa;
+  content: '';
+}
+/*# sourceMappingURL=sub_style.css.map */

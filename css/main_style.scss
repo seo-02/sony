@@ -1,0 +1,901 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'MinSans-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#wrap {
+    position: relative;
+    width: 100%;
+    font-family: 'MinSans-Medium';
+    font-weight: 800;
+    background-color: #000;
+
+    header {
+        height: 80px;
+        background-color:#000;
+
+        >.gnb_bg {
+            // display: none; //임시
+            position: absolute;
+            top: -500px;
+            left: 50%;
+            width: 1920px;
+            height: 400px;
+            margin-left: -960px;
+            text-indent: -9999px;
+            background-color: #000;
+            border-top: 1px solid rgb(63, 63, 63);
+            z-index: 200;
+        }
+
+        >.head-con {
+            position: relative;
+            width: 1920px;
+            margin: 0 auto;
+            // border: 1px solid #000;
+            
+            >.logo {
+                position: absolute;
+                top: 29px;
+                left: 31px;
+                width: 105px;
+                background-size: cover;
+                background-image: url(./../image/sony_logo.svg);
+                z-index: 50;
+                >a {
+                    display: block;
+                    height: 17px;
+                    text-indent: -9999px;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+            >.snb {
+                display: flex;
+                position: absolute;
+                top: 20px;
+                right: 25px;
+                z-index: 200;
+                // margin-right: 55px;
+                
+                >li {
+                    width: 25px;
+                    // margin-right: 12px;
+                    background-repeat: no-repeat;
+                    background-position: 0 center;
+                    &:nth-child(1) {
+                        margin-right: 25px;
+                        background-image: url(./../image/sony_02.svg);
+                    }
+                    &:nth-child(2) {
+                        margin-right: 25px;
+                        background-image: url(./../image/sony_03.svg);
+                    }
+                    &:nth-child(3) {
+                        background-image: url(./../image/sony_04.svg);
+                    }
+                            // border: 1px solid #f00;
+
+                    >a {
+                        display: block;
+                        height: 40px;
+                        text-indent: -9999px;
+                    }
+                }
+            }//end of .snb
+
+            >nav {
+                >.gnb {
+                    display: flex;
+                    justify-content: center;
+                    width: 1920px;;
+                    margin: 0 auto;
+                    
+                    >li {
+                        width: 200px;
+                        height: 80px;
+                        line-height: 80px;
+                        z-index: 200;
+                        &:hover>a, &.on>a {
+                            color: #5B66EF;
+                            &::after {
+                                display: block;
+                                position: absolute;
+                                height: 2px;
+                                width: 200px;
+                                content: '';
+                                background-color: #5B66EF;
+                            }
+                        }
+                        >a {
+                            display: block;
+                            color: white;
+                            font-size: 20px;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                        
+                        >.lnb {
+                            display: none; //임시
+                            position: absolute;
+                            top: 80px;
+                            height: 370px;
+                            padding-top: 30px;
+                            z-index: 100;
+                            &:hover, &.on {
+                                background-color:rgba(255, 255, 255, 0.151);
+                            }
+                            >li {
+                                height: 50px;
+                                line-height: 50px;
+                                &:hover>a, &.on>a {
+                                    color: #5B66EF;
+                                }
+                                
+                                >a{
+                                    display: block;
+                                    width: 200px;
+                                    color: white;
+                                    text-align: center;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                }
+                            }
+
+                        }//end of .lnb
+
+                    } //end of li
+
+                }//end of gnb
+
+            }//end of nav
+
+        } //end of .head-con
+        
+    } //end of header
+    
+    section.visual {
+        width:1920px;
+        // background-color: #000;
+        height: 1000px;
+        margin: 0 auto;
+        
+        
+        >.slide-container {
+            position: relative;
+            width: 1920px;
+            height: 100%;
+            overflow: hidden;
+            
+            >.slide {
+                position: absolute;
+                left: calc(-1920px * 5);
+                display: flex;
+                width: calc(1920px * 10);
+                height: 100%;
+                // border: 1px solid #000;
+                
+                >li {
+                    position:relative;
+                    width: 1920px;
+                    height: 100%;
+                    background-size: cover;
+
+                    &.speaker {background-image: url(./../image/sony_08.jpg);}
+                    &.camera {background-image: url(./../image/sony_visual.jpg);}
+                    
+                    >.slide-text{
+                        position: relative;
+                        color: white;
+                        >p {
+                            // display: none;
+                            position: absolute;
+                            top:300px;
+                            left: 180px;
+                            // border: 1px solid #f00;
+                            font-weight: 600;
+                            font-size: 130px;
+                            line-height: 140px;
+                        }
+                        // margin-bottom: 0;
+                        >span {
+                            position: absolute;
+                            top: 620px;
+                            left: 180px;
+                            font-size:20px;
+                            font-weight: 500;
+                        }
+                        >a {
+                            position: absolute;
+                            top: 730px;
+                            left: 180px;
+                            color: white;
+                            font-size: 22px;
+                        }
+                        z-index: 150;
+                    }
+                    
+                    
+                    
+                    >.video-con {
+                        position: relative;
+                        width: 1920px;
+                        height: 1000px;
+                        margin-top: -20px;
+                        overflow: hidden;
+                        >video {
+                            width: 100%;
+                            // height: 100%;
+                        }
+                        z-index: 100;
+                    }
+                }//end of li
+
+            }//end of .slide
+
+            >.slides-cs {
+                position: absolute;
+                top: 0;
+                display: flex;
+                height: 100%;
+                text-indent: -99999px;
+                z-index: 100;
+                .left {
+                    display: block;
+                    width: calc(1920px / 2);
+                    cursor: url(./../arrow/arrow_l.935a967c.cur),auto;
+                }
+                .right {
+                    display: block;
+                    width: calc(1920px / 2);
+                    cursor: url(./../arrow/arrow_r.1db549d7.cur),auto;
+                }
+            } //end of .slides-cs
+            
+            >.page-count {
+                position: absolute;
+                right: 50px;
+                bottom: 45px;
+                color: white;
+                font-size: 18px;
+                z-index: 100;
+                >p{
+                    font-weight: 400;
+                    >span {
+
+                        &::after {
+                            display: inline-block;
+                            width: 35px;
+                            margin: 0 4px;
+                            color: rgb(50, 50, 50);
+                            // height: 1px;
+                            border-bottom: 1px solid rgb(50, 50, 50);
+                            content: '';
+                        }
+                    }
+                    >i {
+                        color: rgb(50, 50, 50);
+                    }
+                }
+            }// end of page-count
+
+        }//end of .slide-container
+
+    } //end of section.visual
+
+    section.visual-two {
+        position: relative;
+        display: flex;
+        width: 1920px;
+        height: 1080px;
+        margin: 0 auto;
+        
+        >.vt-left {
+            position: absolute;
+            width: 960px;
+            height: 1080px;
+            overflow: hidden;
+            
+            >.vtl-slide-container{
+                width: 960px;
+                height: 1080px;
+                
+                >.vtl-slide{
+                    position: absolute;
+                    left: 0;
+                    width: calc(100% * 4);
+
+                    display: flex;
+                    flex-flow: row nowrap;
+                    >p  {
+                        width: calc(100% / 4);
+                        height: 1080px;
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                } //end of .vtl-slide
+
+            } //end of .vtl-slide-container
+
+        } //end of .vt-left
+
+        >.vt-right {
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 1080px;
+            background-color: #ececec;
+            
+            >.vtr-slide-container {
+                width: calc(100% - 80px);
+                height: 760px;
+                margin-top: 110px;
+                margin-left: 80px;
+
+                overflow: hidden;
+                // border: 1px solid coral;
+
+                >.vtr-slide {
+                    position: relative;
+                    >ul {
+                        position: absolute;
+                        left: 0;
+                        display: flex;
+                        width: calc(550px * 4);
+
+                        >li {
+                            width: 550px;
+                            height: 760px;
+                            // border: 1px solid pink;
+                            >a {
+
+                                >p {
+                                    position: absolute;
+                                    &:nth-child(1) {
+                                        font-size: 48px;
+                                        font-weight: 600;
+                                        margin-bottom: 80px;
+                                    }
+                                    &:nth-child(2) {
+                                        top: 150px;
+                                        width: 530px;
+                                        height: 530px;
+                                        margin-bottom: 20px;
+                                        background-color: #fff;
+                                        >img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                    &:nth-child(3) {
+                                        bottom: 20px;
+                                        font-size: 30px;
+                                        margin-bottom: 3px;
+                                    }
+                                    &:nth-child(4) {
+                                        display: none;
+                                        bottom: 0;
+                                        color: gray;
+                                        font-size: 18px;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }//end of a
+                            >a >p.text {
+                                display: none;
+                            }
+                            >a.on >p.text {
+                                display: block;
+                            }
+                            
+                        }
+                        >.WH-1000XM4 {
+                            >a {
+                                >p:nth-child(1){
+                                    margin-bottom: 13px;
+                                }
+                            }
+                        }
+                    }
+                }//end of .vtr-slide
+
+            }//end of .vtr-slide-container
+
+        } //end of .vt-right
+        >.vt-next {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            display: block;
+            width: 250px;
+            height: 750px;
+            margin-top: -375px;
+            text-indent: -9999px;
+            // border: 1px solid #fff;
+            cursor: url(./../arrow/arrow_r.1db549d7.cur),auto;
+        }
+    } //end of .visual-two 
+
+    section.event {
+        position: relative;
+        top: 0;
+        width: 1920px;
+        // padding: 0 24px;
+        padding-top: 135px;
+        margin: 0 auto;
+        background-color: #fff;
+        >h2 {
+            width: 100%;
+            // height: 135px;
+            padding-bottom: 50px;
+            font-size: 40px;
+            text-align: center;
+        }
+        >.event-top{
+            position: relative;
+            width: calc(100% - 48px);
+            height: 610px;
+            margin: 0 auto;
+            background-image: url(./../image/event_bg.jpg);
+
+            >p {
+                position: absolute;
+                left: 320px;
+                top: 250px;
+                font-size: 38px;
+                line-height: 38px;
+                >span {
+                    color: grey;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+            
+            >.event-slide {
+                position: absolute;
+                top: 80px;
+                right: 260px;
+                width: 400px;
+                >.event-slide-bg {
+                    width: 400px;
+                    height: 400px;
+                    text-indent: -9999px;
+                    background-color: #fff;
+                }
+                >.vtr-slides-btn {
+                    >a {
+                        position: absolute;
+                        top: 25%;
+                        display: block;
+                        width: 26px;
+                        height: 55px;
+                        margin-top: -25px;
+                        text-indent: -9999px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        z-index: 100;
+                        &.prev {
+                            left: 5px;
+                            background-image: url(./../image/prev.png);
+                        }
+                        &.next {
+                            right: 5px;
+                            background-image: url(./../image/next.png);
+                        }
+                    }
+                }//end of .vtr-slides-btn
+                >.es-container {
+                    position: relative;
+                    top: -400px;
+                    left: 0;
+                    width: 400px;
+                    height: 450px;
+                    overflow: hidden;
+                    // border: 1px solid #000;
+
+                    >ul {
+                        position: absolute;
+                        left: -400px;
+                        display: flex;
+                        flex-flow: row wrap;
+                        width: 1600px;
+                        >li {
+                                >p{
+                                    text-align: center;
+                                    &.text{
+                                        padding-top: 10px;
+                                        font-size: 24px;
+                                        cursor: text;
+                                        >span {
+                                            color: grey;
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    &.img {
+                                        transition: all 0.5s;
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                        }
+                    }
+
+                }//end of .es-container.
+
+            }//end of .event-slide
+
+        } //end of .event-top
+        
+        >.event-bottom{
+            // width: 1920px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+            padding: 0 24px;
+
+            >div {
+                position: relative;
+                width: 610px;
+                height: 600px;
+                overflow: hidden;
+
+                > a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    >p {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 430px;
+                        left: 50px;
+                        font-size: 38px;
+                        font-weight: 600;
+                        line-height:42px;
+                        z-index: 20;
+                        >span {
+                            color: grey;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                    >img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 10;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                &:hover img{
+                transform: scale(1.1);
+                }
+            }
+            
+        }//end of event-bottom 
+        
+        >p {
+            margin: 45px auto 0;
+            padding-bottom: 120px ;
+            font-size: 20px;
+            text-align: center;
+        }
+    } //end of section.event
+
+    section.product {
+        width: 1920px;
+        height: 925px;
+        margin: 0 auto;
+        background-color: rgb(245, 245, 245);
+        >h2 {
+            padding-top: 130px;
+            margin-bottom: 50px;
+            font-size: 36px;
+            text-align: center;
+        }
+        >.product-container {
+            display: flex;
+            height: 600px;
+            >div {
+                position: relative;
+                width: calc(100% / 4);
+                border-right: 1px solid #ccc;
+                background-repeat: no-repeat;
+                background-position: 200px center;
+                transition: all 0.5s;
+                >a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    
+                    >p {
+                        position: absolute;
+                        left: 50px;
+                        bottom: 60px;
+                        font-size: 26px;
+                    }
+                }
+                &:hover {
+                    background-position: center center;
+                    background-color: rgb(29, 80, 175);
+                }
+            }
+
+            >.pc-1 {background-image: url(./../image/product_1.png);}
+            >.pc-2 {background-image: url(./../image/product_2.png);}
+            >.pc-3 {background-image: url(./../image/product_3.png);}
+            >.pc-4 {background-image: url(./../image/product_4.png);}
+        }// end of .product-container
+        
+    }//end of section.product
+
+    section.alpha-academy {
+        position: relative;
+        width: 1920px;
+        height: 440px;
+        margin: 0 auto;
+        background-image: url(./../image/alpha_bg.png);
+        background-color: rgb(245, 245, 245);
+        >p {
+            position: absolute;
+            top: 170px;
+            left: 50%;
+            width: 230px;
+            margin-left: -120px;
+            font-size: 40px;
+            text-align: center;
+            >a {
+                font-size: 20px;
+            }
+        }
+    }//end of section.alpha-academy 
+
+    section.help {
+        position: relative;
+        display: flex;
+        width: 1920px;
+        height: 250px;
+        margin: 0 auto;
+        background-color: rgb(245, 245, 245);
+        >h2 {
+            position: absolute;
+            top: 60px;
+            left: 90px;
+            font-size: 40px;
+        }
+        >ul {
+            display: flex;
+            flex-flow: row nowrap;
+            position: absolute;
+            top: 60px;
+            right: 120px;
+            >li {
+                width: 130px;
+                height: 85px;
+                margin-right: 30px;
+                background-repeat: no-repeat;
+                background-position: center 0;
+                background-size: 40%;
+
+                &:nth-child(1) {background-image: url(./../image/help_1.svg);}
+                &:nth-child(2) {background-image: url(./../image/help_2.svg);}
+                &:nth-child(3) {background-image: url(./../image/help_3.svg);}
+                &:nth-child(4) {background-image: url(./../image/help_4.svg);}
+                >a {
+                    display: block;
+                    // height: 100%;
+                    padding-top: 60px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+        }
+    }// end of section.help
+
+    aside {
+        display: none;
+        >.option {
+            position: fixed;
+            right: 3%;
+            bottom: 3%;
+            // border: 1px solid red;
+            z-index: 100;
+            >.opt-sub {
+                display: none;
+                >p {
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 5px;
+                    text-indent: -9999px;
+                    background-color: rgb(34, 34, 34);
+                    border-radius: 30px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    &.kakaotalk {
+                        background-image: url(./../image/sony_30.svg);
+                    }
+                    &.customer-center {
+                        background-image: url(./../image/sony_31.svg);
+                    }
+                    &.pageup {
+                        background-size: 50%;
+                        background-image: url(./../image/up-arrow.svg);
+                    }
+                    >a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+                >p.plus {
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 5px;
+                    text-indent: -9999px;
+                    background-color: rgb(34, 34, 34);
+                    border-radius: 30px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-image: url(./../image/sony_32.svg);
+                    background-color:rgb(86, 96, 248);
+                    transition: all 0.3s;
+                    >a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+        }
+    }
+
+    footer {
+        position: relative;
+        width: 1920px;
+        height: 500px;
+        margin: 0 auto;
+        color: #ccc;
+        background-color: #000;
+        >.left {
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            >.site {
+                display: flex;
+                margin-bottom: 20px;
+                >li{
+                    >a{
+                        color: #ccc;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    &::after {
+                        margin: 0 12px;
+                        font-size: 14px;
+                        font-weight: 300;
+                        content: '|';
+                    }
+                    &:nth-child(2)>a {
+                        font-weight: 600;
+                    }
+                }
+
+            }//end of .site
+
+            >.inipay {
+                >p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    &:last-child {
+                        position: relative;
+                        line-height: 20px;
+                        >a {
+                            position: absolute;
+                            top: 4px;
+                            right: 480px;
+                            width: 30px;
+                            height: 30px;
+                            text-indent: -9999px;
+                            background-image: url(./../image/inipay1.png);
+                            background-size: contain;
+                        }
+                    }
+                }
+            } //end of .inipay
+            >address {
+                margin-top: 20px;
+                color: rgb(170, 170, 170);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 25px;
+            }
+        }//end of .left
+
+        >.right {
+            position: absolute;
+            top: 90px;
+            right: 160px;
+            
+            >ul {
+                display: flex;
+                flex-flow: row nowrap;
+                width: 600px;
+                height: 40px;
+                line-height: 40px;
+                // position: absolute;
+                // right: 110px;
+                >li{
+                    font-size: 24px;
+                    font-weight: 300;
+                    &:first-child{
+                        margin-right: 100px;
+                    }
+                    >a {
+                        display: block;
+                        height: 35px;
+                        width: 35px;
+                        margin-right: 35px;
+                        text-indent: -9999px;
+                        background-position: center center;
+
+                    }
+                    &:nth-child(2)>a{background-image: url(./../image/sony_33.svg);}
+                    &:nth-child(3)>a{background-image: url(./../image/sony_34.svg);}
+                    &:nth-child(4)>a{background-image: url(./../image/sony_35.svg);}
+                    &:nth-child(5)>a{background-image: url(./../image/sony_36.svg);}
+                }
+            }
+            >select#sonyfamily {
+                width: 300px;
+                height: 50px;
+                margin: 40px 6px 0 0;
+                color: rgb(170, 170, 170);
+                text-indent: 15px;
+                font-size: 16px;
+                background-color: rgb(34, 34, 34);
+                outline: none;
+                border: none;
+                appearance:none ;
+            }
+            >button#sonyglobal {
+                width: 300px;
+                height: 50px;
+                margin-top: 40px;
+                color: rgb(170, 170, 170);
+                text-indent: 15px;
+                font-size: 16px;
+                text-align: left;
+                background-color: rgb(34, 34, 34);
+                outline: none;
+                border: none;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 10px;
+
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 6px;
+                    border-color: transparent transparent transparent rgb(170, 170, 170);
+                    content: '';
+                }
+            }
+        }//end of .right
+    } //end of footer
+}
